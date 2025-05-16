@@ -1,0 +1,28 @@
+{
+    "name": "velislav/code-task-repo",
+    "description": "MaxSubarray and Anagram tasks",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^12"
+    },
+    "autoload": {
+        "psr-4": {
+            "LeadDeskTasks\\": "interfaces/",
+            "MaxSubarray\\": "max-subarray/src/",
+            "Anagram\\": "anagram/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MaxSubarray\\Tests\\": "max-subarray/tests/",
+            "Anagram\\Tests\\": "anagram/tests/"
+        }
+    },
+    "require": {
+        "php": "^8.1"
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "stable"
+}
